@@ -1,0 +1,19 @@
+dataset: tencent
+USER_ID_FIELD: user_id
+ITEM_ID_FIELD: item_id
+TIME_FIELD: timestamp
+load_col:
+    inter: [user_id, item_id, timestamp]
+ITEM_LIST_LENGTH_FIELD: item_length
+LIST_SUFFIX: _list
+
+
+day_factor: 1
+# 5-core dataset
+min_user_inter_num: 0
+min_item_inter_num: 0
+filter_inter_by_user_or_item: False
+lowest_val: ~
+
+user_inter_num_interval: "[1,inf)"
+item_inter_num_interval: "[1,inf)"
